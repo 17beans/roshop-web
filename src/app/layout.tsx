@@ -12,6 +12,10 @@ import theme from './theme';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider } from '@mui/material/styles';
 
+// Components
+import TopBar from '../components/TopBar';
+
+
 export const metadata: Metadata = {
   title: 'RoShop',
   description: 'RoShop Web',
@@ -22,12 +26,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html /*lang="en"*/>
       <head />
       <ThemeProvider theme={theme}>
-        {/* <CssBaseline /> */}
+        <CssBaseline />
         <body>
-          <div>
-            MainLayout
-          </div>
-
           {children}
         </body>
       </ThemeProvider>
