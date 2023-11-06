@@ -38,10 +38,10 @@ const Right = () => {
             <Link href={'/'}>
                 디스코드
             </Link>
-            {/* <Link href={'/'}>
+            {/* <Link href={'/'} className="bg-login-blue rounded-xl pt-1.5 pb-1.5 pl-3.5 pr-3.5 text-white">
                 로그인하기
             </Link> */}
-            <div>
+            <div className="bg-login-blue rounded-xl pt-1.5 pb-1.5 pl-3.5 pr-3.5 text-white">
                 로그인하기
             </div>
         </Stack>

@@ -14,6 +14,7 @@ import { ThemeProvider } from '@mui/material/styles';
 
 // Components
 import TopBar from '../components/TopBar';
+import Footer from '@/components/Footer';
 
 
 export const metadata: Metadata = {
@@ -30,6 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <body>
           <TopBar />
           {children}
+          <Footer />
         </body>
       </ThemeProvider>
     </html>

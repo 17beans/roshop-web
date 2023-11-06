@@ -1,0 +1,87 @@
+{
+    "SellingProducts": [
+        {
+            "PID": 0,
+            "ProductName": "타워 시스템",
+            "SellerName": "beans",
+            "Price": 100000,
+            "CurrencyType": "KRW",
+            "ImageUrl": "[AWS S3 image file url]",
+            "Activated": 1,
+            "Detail": {
+                "DetailPageData1": "",
+                "DetailPageData2": ""
+            }
+        },
+        {
+            "PID": 1,
+            "ProductName": "캐릭터 던지기 시스템",
+            "SellerName": "beans",
+            "Price": 60000,
+            "CurrencyType": "KRW",
+            "ImageUrl": "[AWS S3 image file url]",
+            "Activated": 1,
+            "Detail": {
+                "DetailPageData1": "",
+                "DetailPageData2": ""
+            }
+        },
+        {
+            "PID": 2,
+            "ProductName": "PeriodicFunctionSystem",
+            "SellerName": "beans",
+            "Price": 80000,
+            "CurrencyType": "KRW",
+            "ImageUrl": "[AWS S3 image file url]",
+            "Activated": 1,
+            "Detail": {
+                "DetailPageData1": "",
+                "DetailPageData2": ""
+            }
+        }
+    ],
+    "Orders": [
+        {
+            "PID": 0,
+            "OrderName": "",
+            "Orderer": "User01",
+            "Price": 30000,
+            "CurrencyType": "KRW",
+            "ImageUrl": "[AWS S3 image file url]",
+            "Activated": 1,
+            "Detail": {
+                "DetailPageData1": "",
+                "DetailPageData2": ""
+            },
+            "Completed": 0
+        },
+        {
+            "PID": 1,
+            "OrderName": "",
+            "Orderer": "User01",
+            "Price": 30000,
+            "CurrencyType": "KRW",
+            "ImageUrl": "[AWS S3 image file url]",
+            "Activated": 0,
+            "Detail": {
+                "DetailPageData1": "",
+                "DetailPageData2": ""
+            },
+            "Completed": 0
+        },
+        {
+            "PID": 2,
+            "OrderName": "",
+            "Orderer": "User01",
+            "Price": 30000,
+            "CurrencyType": "KRW",
+            "ImageUrl": "[AWS S3 image file url]",
+            "Activated": 0,
+            "Detail": {
+                "DetailPageData1": "",
+                "DetailPageData2": ""
+            },
+            "Completed": 1
+        }
+    ]
+}
