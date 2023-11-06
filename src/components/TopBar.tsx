@@ -9,18 +9,16 @@ const Left = () => {
             <Link href={'/'}>
                 <Image
                     src="/Logo_RoShop.png"
-                    // width={174}
-                    // height={51}
-                    width={174/2}
-                    height={51/2}
+                    width={174 / 2}
+                    height={51 / 2}
                     alt="RoShop Web Logo"
                 />
             </Link>
-            <Link href={'/'}>
+            <Link href={'/list/Products'}>
                 판매
             </Link>
-            <Link href={'/'}>
-                <h3 className="">주문제작</h3>
+            <Link href={'/list/Orders'}>
+                주문제작
             </Link>
         </Stack>
     )
@@ -35,7 +33,7 @@ const Right = () => {
             <Link href={'/'}>
                 로블록스
             </Link>
-            <Link href={'/'}>
+            <Link href={'/https://discord.gg/WKHScdFW4X'}>
                 디스코드
             </Link>
             {/* <Link href={'/'} className="bg-login-blue rounded-xl pt-1.5 pb-1.5 pl-3.5 pr-3.5 text-white">
@@ -50,7 +48,7 @@ const Right = () => {
 
 export default function TopBar() {
     return (
-        <div className="flex font-S-CoreDream text-xl font-bold bg-white">
+        <div className="flex font-S-CoreDream text-xl font-bold bg-white text-black">
             <Left />
             <div className="flex-6 justify-center"></div>
             <Right />

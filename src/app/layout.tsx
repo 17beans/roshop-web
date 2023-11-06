@@ -14,7 +14,7 @@ import { ThemeProvider } from '@mui/material/styles';
 
 // Components
 import TopBar from '../components/TopBar';
-import Footer from '@/components/Footer';
+import Footer from '../components/Footer';
 
 
 export const metadata: Metadata = {

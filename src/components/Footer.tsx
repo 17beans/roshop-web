@@ -22,7 +22,7 @@ const UnderLine = () => {
 
 const Margin = () => {
     return (
-        <div className="m-3">
+        <div className="p-2 bg-white">
 
         </div>
     )
@@ -30,7 +30,7 @@ const Margin = () => {
 
 const MarginLarge = () => {
     return (
-        <div className="m-20">
+        <div className="p-10 bg-white">
 
         </div>
     )
@@ -40,9 +40,7 @@ const MarginLarge = () => {
 
 export default function Footer({ }: {}) {
     return (
-        <div className="flex-row text-gray-600 font-S-CoreDream
-        justify-center self-center items-center bg-center snap-center origin-center object-center content-center
-        ">
+        <div className="flex-row text-gray-600 font-S-CoreDream bg-white">
             <MarginLarge />
             <UnderLine />
             <MarginLarge />
@@ -85,6 +83,7 @@ export default function Footer({ }: {}) {
                 <div className="flex-1"></div>
             </div>
 
+            <MarginLarge />
         </div>
     )
 }
