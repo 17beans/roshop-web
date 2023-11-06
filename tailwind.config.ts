@@ -13,8 +13,14 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      // import한 Web Font가 있을 경우 여기에 fontFamily로 정희해야 ClassName에서 자동 완성으로 사용 가능
+      fontFamily:{
+        'S-CoreDream':['S-CoreDream-3Light']
+      },
     },
   },
   plugins: [],
 }
+
+
 export default config
