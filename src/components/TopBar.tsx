@@ -28,9 +28,6 @@ const Right = () => {
     return (
         <Stack spacing={4} direction="row" className="flex-1 justify-center items-center">
             <Link href={'/'}>
-                문의
-            </Link>
-            <Link href={'/'}>
                 로블록스
             </Link>
             <Link href={'/https://discord.gg/WKHScdFW4X'}>
