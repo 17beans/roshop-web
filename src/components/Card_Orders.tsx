@@ -1,0 +1,26 @@
+import Image from "next/image";
+import Link from "next/link";
+import { Settings, TypeOrder } from "./ComponentsSettings";
+
+
+
+export default function Card_Orders({ cardData }: { cardData: TypeOrder }) {
+    return (
+        <div className="border rounded-2xl m-2 basis-1/3" key={cardData.PID}>
+            <Image
+                src={cardData.ImageUrl}
+                width={Settings.CardWidth}
+                height={Settings.CardHeight}
+                alt={`Order thumbnail: ${cardData.OrderName}`}
+                unoptimized={true}
+                className="border rounded-2xl w-[100%]"
+            ></Image>
+            <div>{cardData.OrderName}</div>
+            <div className="flex">
+                <div className="font-bold">{cardData.CurrencyType}</div>
+                <div>&nbsp;</div>
+                <div>{cardData.Price}</div>
+            </div>
+        </div>
+    )
+}

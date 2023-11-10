@@ -1,10 +1,10 @@
 export const Settings = {
-    CardWidth: 100,
-    CardHeight: 100,
+    CardWidth: 256,
+    CardHeight: 149,
 }
 
-export type TypeSellingProducts = {
-    PID: 0,
+export type TypeSellingProduct = {
+    PID: number,
     ProductName: string,
     SellerName: string,
     Price: number,
@@ -16,11 +16,11 @@ export type TypeSellingProducts = {
         DetailPageData2: any
     }
 }
-export type TypeOrders = {
-    PID: 0,
+export type TypeOrder = {
+    PID: number,
     OrderName: string,
     Orderer: string,
-    Price: 30000,
+    Price: number,
     CurrencyType: string,
     ImageUrl: string,
     Activated: number,

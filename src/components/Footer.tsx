@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Stack from '@mui/material/Stack';
+import { Margin, MarginLarge } from "./Margin";
 
 
 
@@ -15,22 +16,6 @@ const ComponentName = () => {
 const UnderLine = () => {
     return (
         <div style={{ width: '100%', height: '1px', borderColor: 'black' }} className="bg-gray-300">
-
-        </div>
-    )
-}
-
-const Margin = () => {
-    return (
-        <div className="p-2 bg-white">
-
-        </div>
-    )
-}
-
-const MarginLarge = () => {
-    return (
-        <div className="p-10 bg-white">
 
         </div>
     )
