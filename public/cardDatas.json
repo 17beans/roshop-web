@@ -40,7 +40,7 @@
             }
         },
         {
-            "PID": 0,
+            "PID": 3,
             "ProductName": "타워 시스템",
             "SellerName": "beans",
             "Price": 100000,
@@ -53,7 +53,7 @@
             }
         },
         {
-            "PID": 1,
+            "PID": 4,
             "ProductName": "캐릭터 던지기 시스템",
             "SellerName": "beans",
             "Price": 60000,
@@ -66,7 +66,7 @@
             }
         },
         {
-            "PID": 2,
+            "PID": 5,
             "ProductName": "PeriodicFunctionSystem",
             "SellerName": "beans",
             "Price": 80000,
@@ -79,7 +79,7 @@
             }
         },
         {
-            "PID": 0,
+            "PID": 6,
             "ProductName": "타워 시스템",
             "SellerName": "beans",
             "Price": 100000,
@@ -92,7 +92,7 @@
             }
         },
         {
-            "PID": 1,
+            "PID": 7,
             "ProductName": "캐릭터 던지기 시스템",
             "SellerName": "beans",
             "Price": 60000,
@@ -105,7 +105,7 @@
             }
         },
         {
-            "PID": 2,
+            "PID": 8,
             "ProductName": "PeriodicFunctionSystem",
             "SellerName": "beans",
             "Price": 80000,
@@ -162,7 +162,7 @@
             "Completed": 1
         },
         {
-            "PID": 0,
+            "PID": 3,
             "OrderName": "타워 시스템 만들어 주세요~~ 3만 드림",
             "Orderer": "User01",
             "Price": 30000,
@@ -176,7 +176,7 @@
             "Completed": 0
         },
         {
-            "PID": 1,
+            "PID": 4,
             "OrderName": "캐릭터 던지기 시스템 만들어 주시면 감사하겠습니다 (2만원)",
             "Orderer": "User02",
             "Price": 20000,
@@ -190,7 +190,7 @@
             "Completed": 0
         },
         {
-            "PID": 2,
+            "PID": 5,
             "OrderName": "테스트 게시글 입니다.",
             "Orderer": "User03",
             "Price": 30000,
@@ -204,7 +204,7 @@
             "Completed": 1
         },
         {
-            "PID": 0,
+            "PID": 6,
             "OrderName": "타워 시스템 만들어 주세요~~ 3만 드림",
             "Orderer": "User01",
             "Price": 30000,
@@ -218,7 +218,7 @@
             "Completed": 0
         },
         {
-            "PID": 1,
+            "PID": 7,
             "OrderName": "캐릭터 던지기 시스템 만들어 주시면 감사하겠습니다 (2만원)",
             "Orderer": "User02",
             "Price": 20000,
@@ -232,7 +232,7 @@
             "Completed": 0
         },
         {
-            "PID": 2,
+            "PID": 8,
             "OrderName": "테스트 게시글 입니다.",
             "Orderer": "User03",
             "Price": 30000,

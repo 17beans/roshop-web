@@ -6,7 +6,7 @@ import { Settings, TypeOrder } from "./ComponentsSettings";
 
 export default function Card_Orders({ cardData }: { cardData: TypeOrder }) {
     return (
-        <div className="border rounded-2xl m-2 basis-1/3" key={cardData.PID}>
+        <div className="border rounded-2xl m-2 basis-1/3">
             <Image
                 src={cardData.ImageUrl}
                 width={Settings.CardWidth}

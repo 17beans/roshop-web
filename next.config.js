@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    image: {
+    images: {
         domains: ["localhost", "https://beansstation.duckdns.org"]
-    }
+    },
 }
 
 module.exports = nextConfig
