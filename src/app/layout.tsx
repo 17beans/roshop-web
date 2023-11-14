@@ -16,6 +16,17 @@ import { ThemeProvider } from '@mui/material/styles';
 import TopBar from '../components/TopBar';
 import Footer from '../components/Footer';
 
+// fonts
+import { Gothic_A1 } from "next/font/google";
+const gothicA1 = Gothic_A1({
+  subsets: ["latin"],
+  weight: ["100", "400", "700", "900"],
+});
+export const cls = (...classnames: string[]) => {
+  return classnames.join(' ');
+}
+
+
 
 export const metadata: Metadata = {
   title: 'RoShop',
