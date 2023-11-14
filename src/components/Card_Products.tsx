@@ -15,7 +15,7 @@ export default function Card_Products({ cardData }: { cardData: TypeProduct }) {
                 unoptimized={true}
                 className="border rounded-2xl w-[100%]"
             ></Image>
-            <div className="font-bold">{cardData.ProductName}</div>
+            <div className={`font-semibold`}>{cardData.ProductName}</div>
             <div className="flex">
                 <div>{cardData.CurrencyType}</div>
                 <div>&nbsp;</div>

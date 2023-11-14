@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <head />
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <body>
+        <body className='text-sm'>
           <TopBar />
           {children}
           <Footer />

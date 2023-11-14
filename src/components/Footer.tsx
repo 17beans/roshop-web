@@ -46,7 +46,7 @@ export default function Footer({ }: {}) {
                     <Stack direction={'row'} spacing={2}>
                         <div>사업자 등록 번호: 640-59-00693</div>
                         <div>통신판매신고: 2023-서울노원-1789</div>
-                        <Link href={'https://www.ftc.go.kr/bizCommPop.do?wrkr_no=6405900693'}>사업자정보확인</Link>
+                        <Link href={'https://www.ftc.go.kr/bizCommPop.do?wrkr_no=6405900693'}>[사업자정보확인]</Link>
                     </Stack>
 
                     <div>서울특별시 노원구 통일로 192다길 35, 이화빌라 B02호</div>
@@ -56,19 +56,19 @@ export default function Footer({ }: {}) {
                     </Stack>
 
                     <Stack className="" direction={'row'} spacing={2}>
-                        <Link href={'/'} className="text-sky-400">개인정보처리방침</Link>
+                        <Link href={'/'} className="text-blue-500">개인정보처리방침</Link>
                         <div>|</div>
-                        <Link href={'/'} className="text-sky-400">이용약관</Link>
+                        <Link href={'/'} className="text-blue-500">이용약관</Link>
                         <div>|</div>
-                        <Link href={'/'} className="text-sky-400">청소년보호정책</Link>
+                        <Link href={'/'} className="text-blue-500">청소년보호정책</Link>
                         <div>|</div>
-                        <Link href={'/'} className="text-sky-400">문의접수</Link>
+                        <Link href={'/'} className="text-blue-500">문의접수</Link>
                         <div>|</div>
-                        <Link href={'/'} className="text-sky-400">회사소개</Link>
+                        <Link href={'/'} className="text-blue-500">회사소개</Link>
                         <div>|</div>
-                        <Link href={'https://discord.gg/WKHScdFW4X'} className="text-sky-400">디스코드</Link>
+                        <Link href={'https://discord.gg/WKHScdFW4X'} className="text-blue-500">디스코드</Link>
                         <div>|</div>
-                        <Link href={'https://pf.kakao.com/_xlxiyxbG'} className="text-sky-400">카카오톡</Link>
+                        <Link href={'https://pf.kakao.com/_xlxiyxbG'} className="text-blue-500">카카오톡</Link>
                     </Stack>
 
                     {/* <div>호스팅사업자 : 아마존웹서비스(AWS)</div> */}
