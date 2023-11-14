@@ -24,21 +24,27 @@ export default function Cards_Orders({ title, max, data }: { title: string, max:
 
     return (
         <div className="flex-col">
-            <div className="flex justify-center font-S-CoreDream text-black">
-                <div className="flex text-center">{title_normal}
-                    &nbsp;
-                    <div className="font-bold">#{title_bold}</div>
-                </div>
-            </div>
+            {
+                !title ?
+                    <div></div> :
+                    <div>
+                        <div className="flex justify-center font-S-CoreDream text-black">
+                            <div className="flex text-center">{title_normal}
+                                &nbsp;
+                                <div className="font-bold">#{title_bold}</div>
+                            </div>
+                        </div>
 
-            <Margin />
-            <Margin />
+                        <Margin />
+                        <Margin />
+                    </div>
+            }
 
             <div className={`flex ${gothicA1.className} text-black`}>
                 <div className="basis-1/6 flex"></div>
                 <div className="basis-4/6 grid grid-cols-3">
                     {data.map((cardData: TypeOrder, index) => {
-                        if (index > max-1) return
+                        if (index > max - 1) return
                         return (<Card_Orders cardData={cardData} key={cardData.PID}></Card_Orders>)
                     })}
                 </div>
