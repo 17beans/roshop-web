@@ -1,4 +1,4 @@
-{
+const datas = {
     "SellingProducts": [
         {
             "PID": 0,
@@ -247,3 +247,7 @@
         }
     ]
 }
+
+
+
+export default datas;

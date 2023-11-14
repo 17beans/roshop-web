@@ -4,7 +4,7 @@ import Stack from '@mui/material/Stack';
 import { Margin, MarginLarge } from "./Margin";
 import Card_Orders from "./Card_Orders";
 import { TypeOrder } from "./ComponentsSettings";
-const mock = require('/public/cardDatas.json');
+import mock from "../app/cardDatas"
 
 
 
