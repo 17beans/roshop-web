@@ -28,7 +28,7 @@ const Left = () => {
 const Right = () => {
     return (
         <Stack spacing={4} direction="row" className="flex-1 justify-center items-center">
-            <Link href={'/'} className="">
+            <Link href={'https://www.roblox.com/groups/8115201/RoShop#!/about'} className="">
                 로블록스
             </Link>
             <Link href={'https://discord.gg/WKHScdFW4X'} className="">
