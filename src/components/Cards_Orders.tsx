@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import Stack from '@mui/material/Stack';
 import { Margin, MarginLarge } from "./Margin";
-import Card_Orders from "./Card_Orders";
 import { TypeOrder } from "./ComponentsSettings";
-import mock from "../app/cardDatas"
+import { gothicA1 } from "./Fonts";
+import Card_Orders from "./Card_Orders";
 
 
 
@@ -18,23 +18,27 @@ const ComponentName = () => {
 
 
 
-export default function RoShopPick({ }: {}) {
+export default function Cards_Orders({ title, max, data }: { title: string, max: number, data: TypeOrder[] }) {
+    const title_normal = title.split("#", 2)[0]
+    const title_bold = title.split("#", 2)[1]
+
     return (
         <div className="flex-col">
-            <div className="flex justify-center">
-                <div className="flex text-center">지금 주목해야 할
+            <div className="flex justify-center font-S-CoreDream text-black">
+                <div className="flex text-center">{title_normal}
                     &nbsp;
-                    <div className="font-bold">#로샵픽</div>
+                    <div className="font-bold">#{title_bold}</div>
                 </div>
             </div>
 
             <Margin />
             <Margin />
 
-            <div className="flex">
+            <div className={`flex ${gothicA1.className} text-black`}>
                 <div className="basis-1/6 flex"></div>
-                <div className="basis-4/6 flex">
-                    {mock.Orders.map((cardData: TypeOrder) => {
+                <div className="basis-4/6 grid grid-cols-3">
+                    {data.map((cardData: TypeOrder, index) => {
+                        if (index > max-1) return
                         return (<Card_Orders cardData={cardData} key={cardData.PID}></Card_Orders>)
                     })}
                 </div>

@@ -3,7 +3,7 @@ export const Settings = {
     CardHeight: 149,
 }
 
-export type TypeSellingProduct = {
+export type TypeProduct = {
     PID: number,
     ProductName: string,
     SellerName: string,

@@ -15,9 +15,9 @@ export default function Card_Orders({ cardData }: { cardData: TypeOrder }) {
                 unoptimized={true}
                 className="border rounded-2xl w-[100%]"
             ></Image>
-            <div>{cardData.OrderName}</div>
+            <div className="font-bold">{cardData.OrderName}</div>
             <div className="flex">
-                <div className="font-bold">{cardData.CurrencyType}</div>
+                <div>{cardData.CurrencyType}</div>
                 <div>&nbsp;</div>
                 <div>{cardData.Price}</div>
             </div>

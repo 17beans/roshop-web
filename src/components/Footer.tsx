@@ -2,16 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Stack from '@mui/material/Stack';
 import { Margin, MarginLarge } from "./Margin";
-
-// fonts
-import { Gothic_A1 } from "next/font/google";
-const gothicA1 = Gothic_A1({
-  subsets: ["latin"],
-  weight: ["100", "400", "700", "900"],
-});
-export const cls = (...classnames: string[]) => {
-  return classnames.join(' ');
-}
+import { gothicA1 } from "./Fonts";
 
 
 

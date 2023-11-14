@@ -1,5 +1,5 @@
 const datas = {
-    "SellingProducts": [
+    "Products": [
         {
             "PID": 0,
             "ProductName": "타워 시스템",
@@ -116,7 +116,20 @@ const datas = {
                 "DetailPageData1": "",
                 "DetailPageData2": ""
             }
-        }
+        },
+        {
+            "PID": 9,
+            "ProductName": "PeriodicFunctionSystem",
+            "SellerName": "beans",
+            "Price": 80000,
+            "CurrencyType": "KRW",
+            "ImageUrl": "https://beansstation.duckdns.org:55443/share/RoShop/DefaultCardImage-Logo_RoShop.png",
+            "Activated": 1,
+            "Detail": {
+                "DetailPageData1": "",
+                "DetailPageData2": ""
+            }
+        },
     ],
     "Orders": [
         {
@@ -231,20 +244,6 @@ const datas = {
             },
             "Completed": 0
         },
-        {
-            "PID": 8,
-            "OrderName": "테스트 게시글 입니다.",
-            "Orderer": "User03",
-            "Price": 30000,
-            "CurrencyType": "KRW",
-            "ImageUrl": "https://beansstation.duckdns.org:55443/share/RoShop/DefaultCardImage-Logo_RoShop.png",
-            "Activated": 0,
-            "Detail": {
-                "DetailPageData1": "",
-                "DetailPageData2": ""
-            },
-            "Completed": 1
-        }
     ]
 }
 
