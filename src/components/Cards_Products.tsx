@@ -41,14 +41,14 @@ export default function Cards_Products({ title, max, data }: { title: string, ma
             }
 
             <div className={`flex ${gothicA1.className} text-black`}>
-                <div className="basis-1/6 flex"></div>
+                <div className="basis-2/6 flex"></div>
                 <div className="basis-4/6 grid grid-cols-3">
                     {data.map((cardData: TypeProduct, index) => {
                         if (index > max-1) return
                         return (<Card_Products cardData={cardData} key={cardData.PID}></Card_Products>)
                     })}
                 </div>
-                <div className="basis-1/6 flex"></div>
+                <div className="basis-2/6 flex"></div>
             </div>
 
         </div>
