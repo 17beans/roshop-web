@@ -8,20 +8,50 @@ generator client {
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
+  // relationMode = "prisma"
 }
 
 
 
+// 사용자 테이블
 model User {
-  uuid        String    @id   @unique   
-  name        String
-  email       String    @unique
-  phone       Int?      @unique
-  avatar      String?
-  createdAt   DateTime  @default(now())
+  uuid          String    @id   @unique
+  name          String
+  email         String    @unique
+  phone         Int?      @unique
+  avatar        String?
+  createdAt     DateTime  @default(now())
+  product       Products[]
 }
 
-model terms {
-  uuid        String    @id   @unique
-  terms_name  String
+// 약관 테이블
+model Terms {
+  id            Int       @id    @unique    @default(autoincrement())
+  uuid          String
+  terms_name    String
+}
+
+// 상품 테이블
+model Products {
+  id            Int       @id   @unique    @default(autoincrement())
+  uuid          String
+  Seller        String
+  ProductName   String
+  Price         Int
+  CurrencyType  String
+  ImageUrl      String?
+  Activated     Boolean
+  user          User      @relation(fields: [uuid], references: [uuid])
+}
+
+// 주문제작 테이블
+model Orders {
+  id            Int       @id   @unique   @default(autoincrement())
+  uuid          String
+  Orderer       String
+  Price         Int
+  CurrencyType  String
+  ImageUrl      String?
+  Activated     Boolean
+  Completed     Boolean
 }
