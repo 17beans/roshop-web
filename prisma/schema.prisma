@@ -15,39 +15,43 @@ datasource db {
 
 // 사용자 테이블
 model User {
-  uuid          String    @id   @unique
+  uuid          String      @id   @unique
   name          String
-  email         String    @unique
-  phone         Int?      @unique
+  email         String      @unique
+  phone         Int?        @unique
   avatar        String?
-  createdAt     DateTime  @default(now())
-  product       Products[]
+  createdAt     DateTime    @default(now())
+  product_FK    Products[]
+  Orders_FK     Orders[]
+  terms_FK      Terms[]
 }
 
 // 약관 테이블
 model Terms {
-  id            Int       @id    @unique    @default(autoincrement())
+  id            Int         @id    @unique    @default(autoincrement())
   uuid          String
+  uuid_FK       User        @relation(fields: [uuid], references: [uuid])
   terms_name    String
 }
 
 // 상품 테이블
 model Products {
-  id            Int       @id   @unique    @default(autoincrement())
+  id            Int         @id   @unique    @default(autoincrement())
   uuid          String
+  uuid_FK       User        @relation(fields: [uuid], references: [uuid])
   Seller        String
   ProductName   String
   Price         Int
   CurrencyType  String
   ImageUrl      String?
   Activated     Boolean
-  user          User      @relation(fields: [uuid], references: [uuid])
 }
 
 // 주문제작 테이블
 model Orders {
-  id            Int       @id   @unique   @default(autoincrement())
+  id            Int         @id   @unique   @default(autoincrement())
   uuid          String
+  uuid_FK       User        @relation(fields: [uuid], references: [uuid])
   Orderer       String
   Price         Int
   CurrencyType  String
