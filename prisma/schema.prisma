@@ -17,9 +17,11 @@ datasource db {
 model User {
   uuid          String      @id   @unique
   name          String
+  nickName      String
   email         String      @unique
   phone         Int?        @unique
   avatar        String?
+  class         String
   createdAt     DateTime    @default(now())
   product_FK    Products[]
   Orders_FK     Orders[]
@@ -35,11 +37,12 @@ model Terms {
 }
 
 // 상품 테이블
+// 개발자가 개발한 것을 
 model Products {
   id            Int         @id   @unique    @default(autoincrement())
   uuid          String
   uuid_FK       User        @relation(fields: [uuid], references: [uuid])
-  Seller        String
+  // Seller        String
   ProductName   String
   Price         Int
   CurrencyType  String
@@ -58,4 +61,10 @@ model Orders {
   ImageUrl      String?
   Activated     Boolean
   Completed     Boolean
+  // 의뢰일자
+  // 완료일자
+  // worker
 }
+
+// 리뷰 테이블
+// model 
