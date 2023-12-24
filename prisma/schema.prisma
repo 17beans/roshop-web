@@ -37,7 +37,6 @@ model Terms {
 }
 
 // 상품 테이블
-// 개발자가 개발한 것을 
 model Products {
   id            Int         @id   @unique    @default(autoincrement())
   uuid          String

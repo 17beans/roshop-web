@@ -1,5 +1,5 @@
 import { Margin, MarginLarge } from "@/components/Margin";
-import mock from "../app/cardDatas"
+import mock from "@/app/cardDatas"
 import Cards_Products from "@/components/Cards_Products";
 import Cards_Orders from "@/components/Cards_Orders";
 

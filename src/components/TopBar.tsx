@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Stack from '@mui/material/Stack';
 import { gothicA1 } from "./Fonts";
+import SignInSignOut from "./SignInSignOutButton";
 
 
 const Left = () => {
@@ -34,12 +35,9 @@ const Right = () => {
             <Link href={'https://discord.gg/WKHScdFW4X'} className="">
                 디스코드
             </Link>
-            {/* <Link href={'/'} className="bg-login-blue rounded-xl pt-1.5 pb-1.5 pl-3.5 pr-3.5 text-white">
-                로그인하기
-            </Link> */}
-            <div className="bg-login-blue rounded-xl pt-2 pb-1.5 pl-3.5 pr-3.5 text-white">
-                로그인하기
-            </div>
+
+            <SignInSignOut />
+
         </Stack>
     )
 }

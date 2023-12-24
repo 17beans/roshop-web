@@ -16,6 +16,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import TopBar from '../components/TopBar';
 import Footer from '../components/Footer';
 import ChannelTalk from '@/components/ChannelTalk';
+import { NextAuthProvider } from './provider';
 
 
 
@@ -31,10 +32,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <body className='text-sm'>
-          <TopBar />
-          {children}
-          <Footer />
-          <ChannelTalk />
+          <NextAuthProvider>
+            <TopBar />
+            {children}
+            <Footer />
+            <ChannelTalk />
+          </NextAuthProvider>
         </body>
       </ThemeProvider>
     </html>
