@@ -25,7 +25,7 @@ export default function SignInSignOut() {
             <div className="flex">
                 <Link
                     href={'/SignOut'}
-                    className="bg-login-blue rounded-xl pt-1.5 pb-1.5 pl-3.5 pr-3.5 text-white">
+                    className={`bg-login-blue rounded-xl pt-1.5 pb-1.5 pl-3.5 pr-3.5 text-white`}>
                     로그아웃
                 </Link>
                 {/* <div className="bg-login-blue rounded-xl pt-2 pb-1.5 pl-3.5 pr-3.5 text-white">
