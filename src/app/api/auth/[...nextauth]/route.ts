@@ -8,24 +8,24 @@ import Kakao from "next-auth/providers/kakao";
 const handler = NextAuth({
     providers: [
         Github({
-            clientId: process.env.GITHUB_CLIENT_ID as string,
-            clientSecret: process.env.GITHUB_CLIENT_SECRET as string,
+            clientId: process.env.GITHUB_CLIENT_ID!,
+            clientSecret: process.env.GITHUB_CLIENT_SECRET!,
         }),
         // Discord({
-        //     clientId: process.env.DISCORD_CLIENT_ID as string,
-        //     clientSecret: process.env.DISCORD_CLIENT_SECRET as string,
+        //     clientId: process.env.DISCORD_CLIENT_ID!,
+        //     clientSecret: process.env.DISCORD_CLIENT_SECRET!,
         // }),
         // Naver({
-        //     clientId: process.env.NAVER_CLIENT_ID as string,
-        //     clientSecret: process.env.NAVER_CLIENT_SECRET as string,
+        //     clientId: process.env.NAVER_CLIENT_ID!,
+        //     clientSecret: process.env.NAVER_CLIENT_SECRET!,
         // }),
         // Google({
-        //     clientId: process.env.GOOGLE_CLIENT_ID as string,
-        //     clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
+        //     clientId: process.env.GOOGLE_CLIENT_ID!,
+        //     clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
         // }),
         // Kakao({
-        //     clientId: process.env.KAKAO_CLIENT_ID as string,
-        //     clientSecret: process.env.KAKAO_CLIENT_SECRET as string,
+        //     clientId: process.env.KAKAO_CLIENT_ID!,
+        //     clientSecret: process.env.KAKAO_CLIENT_SECRET!,
         // }),
 
     ],

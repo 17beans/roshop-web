@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Stack from '@mui/material/Stack';
 import { signIn, useSession } from "next-auth/react";
+import { DiscordLoginButton, GithubLoginButton, GoogleLoginButton } from "react-social-login-buttons";
 
 
 
@@ -34,25 +35,10 @@ export default function SignIn({ }: {}) {
     const { data: session, status } = useSession();
 
     return (
-        <div>
-            {/* <SignInButton PlatformName="github" buttonColor={`bg-slate-800 `} />
-            <SignInButton PlatformName="discord" buttonColor={`bg-violet-600`} />
-            <SignInButton PlatformName="google" buttonColor={`bg-white-700`} textColor={``} />
-            <SignInButton PlatformName="naver" buttonColor={`bg-green-500`} />
-            <SignInButton PlatformName="kakao" buttonColor={``} /> */}
-
-            {/* <button
-                className={`x-4 py-2 border flex gap-2 border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150`}
-                onClick={() => signIn('google')}
-            >
-                <img className="w-6 h-6" src="https://www.svgrepo.com/show/475656/google-color.svg" loading="lazy" alt="google logo" />
-                    <span>Login with Google</span>
-            </button> */}
-
-            <button className="px-4 py-2 border flex gap-2 border-slate-200 dark:border-slate-700 rounded-lg text-slate-700 dark:text-slate-200 hover:border-slate-400 dark:hover:border-slate-500 hover:text-slate-900 dark:hover:text-slate-300 hover:shadow transition duration-150">
-                <img className="w-6 h-6" src="https://www.svgrepo.com/show/475656/google-color.svg" loading="lazy" alt="google logo" />
-                <span className="text-black">Login with Google</span>
-            </button>
+        <div className={`text-center w-full mx-auto max-w[1240px] mt-16`}>
+            <GithubLoginButton onClick={() => signIn("github")} className={`mx-auto mt-16`} />
+            <DiscordLoginButton onClick={() => signIn("discord")} className={`mx-auto mt-16`} />
+            <GoogleLoginButton onClick={() => signIn("google")} className={`mx-auto mt-16`} />
         </div>
     )
 }

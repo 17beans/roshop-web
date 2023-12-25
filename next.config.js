@@ -3,6 +3,14 @@ const nextConfig = {
     images: {
         domains: ["localhost", "https://beansstation.duckdns.org"]
     },
+    webpack: (config) => {
+        config.module.rules.push({
+            test: /\.svg$/,
+            use: ['@svgr/webpack'],
+        });
+
+        return config;
+    },
     // env: {
     //     NEXTAUTH_URL: 'https://roshopkr-web.vercel.app',
     //     NEXTAUTH_SECRET: '',
