@@ -24,15 +24,15 @@ const config: Config = {
         'github': '#742c95',
         'discord': '#4e59df',
         'google': '#f6f8fc',
-        'naver': '#05ce5f',
+        'naver': '#ffffff',
         'kakao': '#fae100',
       },
       textColor: {
         'github': '#ffffff',
         'discord': '#ffffff',
         'google': '#000000',
-        'naver': '#ffffff',
-        'kakao': '#ffffff',
+        'naver': '#000000',
+        'kakao': '#000000',
       }
     },
   },
