@@ -5,19 +5,19 @@ import Stack from '@mui/material/Stack';
 
 
 const ComponentName = () => {
-    return (
-        <div>
-            
-        </div>
-    )
+  return (
+    <div>
+
+    </div>
+  )
 }
 
 
 
-export default function Name({}: {}) {
-    return (
-        <div>
-            
-        </div>
-    )
+export default function Name({ }: {}) {
+  return (
+    <div>
+
+    </div>
+  )
 }

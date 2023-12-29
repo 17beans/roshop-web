@@ -10,23 +10,23 @@ ChannelService.loadScript()
 
 
 const ComponentName = () => {
-    return (
-        <div>
+  return (
+    <div>
 
-        </div>
-    )
+    </div>
+  )
 }
 
 ChannelService.boot({
-    "pluginKey": "8f6cb423-87e9-483f-a6f4-0ab292ef1fbf",
+  "pluginKey": "8f6cb423-87e9-483f-a6f4-0ab292ef1fbf",
 });
 
 
 
 export default function ChannelTalk({ }: {}) {
-    return (
-        <div>
+  return (
+    <div>
 
-        </div>
-    )
+    </div>
+  )
 }
