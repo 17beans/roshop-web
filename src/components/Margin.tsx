@@ -5,25 +5,25 @@ import Stack from '@mui/material/Stack';
 
 
 export const Margin = () => {
-    return (
-        <div className="p-2 bg-white">
+  return (
+    <div className="p-2 bg-white">
 
-        </div>
-    )
+    </div>
+  )
 }
 
 export const MarginLarge = () => {
-    return (
-        <div className="p-10 bg-white">
+  return (
+    <div className="p-10 bg-white">
 
-        </div>
-    )
+    </div>
+  )
 }
 
 export const ComponentName = () => {
-    return (
-        <div>
-            
-        </div>
-    )
+  return (
+    <div>
+
+    </div>
+  )
 }

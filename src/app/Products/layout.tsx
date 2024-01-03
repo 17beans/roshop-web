@@ -5,23 +5,23 @@ import Stack from '@mui/material/Stack';
 
 
 const ComponentName = () => {
-    return (
-        <div>
+  return (
+    <div>
 
-        </div>
-    )
+    </div>
+  )
 }
 
 
 
 export default function Name({ }: {}) {
-    // Show page title
-    // Show product cards
-    // Load on scroll down
+  // Show page title
+  // Show product cards
+  // Load on scroll down
 
-    return (
-        <div>
+  return (
+    <div>
 
-        </div>
-    )
+    </div>
+  )
 }
