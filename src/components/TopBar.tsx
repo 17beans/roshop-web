@@ -36,12 +36,13 @@ const Right = () => {
                 디스코드
             </Link>
 
+            {/* 로그인/로그아웃 */}
             <SignInSignOut />
 
         </Stack>
     )
 }
-
+    
 export default function TopBar() {
     return (
         // <div className="flex font-S-CoreDream font-bold bg-white text-black">
