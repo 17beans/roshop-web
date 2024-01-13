@@ -16,7 +16,7 @@ const ComponentName = () => {
 
 export default function Name({ }: {}) {
   // Show page title
-  // Show product cards
+  // Show product card list
   // Load on scroll down
 
   return (

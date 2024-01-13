@@ -33,9 +33,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <CssBaseline />
         <body className='text-sm'>
           <NextAuthProvider>
-            <TopBar />
-            {children}
-            <Footer />
+            <div className='flex justify-center'>
+              <TopBar />
+            </div>
+            <div className='flex justify-center'>
+              <div className={`w-full sm:w-full md:w-8/12`}>
+                {children}
+              </div>
+            </div>
+                <Footer />
             <ChannelTalk />
           </NextAuthProvider>
         </body>

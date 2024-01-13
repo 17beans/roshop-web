@@ -9,6 +9,7 @@ import IconDiscord from '@/../public/discord.svg';
 import IconGoogle from '@/../public/google.svg';
 import IconNaver from '@/../public/naver.svg';
 import IconKakao from '@/../public/kakao.svg';
+import { Margin } from "@/components/Margin";
 
 
 
@@ -66,12 +67,15 @@ const SignInButton = ({ PlatformName }: { PlatformName: 'github' | 'discord' | '
 
   return (
     <button
-      className={`flex mt-4 ${props.bgColor} ${props.textColor} pl-6 pr-10 rounded-lg items-center border w-1/5 h-14 justify-between text-base`}
+      className={`flex pr-4 my-1.5 ${props.bgColor} ${props.textColor} rounded-lg items-center border justify-center text-base`}
       onClick={() => signIn(PlatformName)}
     >
-      <props.Icon className={`h-14`} />
-      {/* Continue with {GetPlatformNameCamelCase(PlatformName)} */}
-      {GetPlatformNameCamelCase(PlatformName)}로 계속하기
+      <props.Icon className="flex h-full max-h-14" />
+
+      <div className="">
+        {/* Continue with {GetPlatformNameCamelCase(PlatformName)} */}
+        {GetPlatformNameCamelCase(PlatformName)}로 계속하기
+      </div>
     </button>
   )
 }
@@ -80,9 +84,16 @@ const SignInButton = ({ PlatformName }: { PlatformName: 'github' | 'discord' | '
 
 export default function SignIn({ }: {}) {
   return (
-    <div className="mt-16 flex flex-1 flex-col justify-center items-center">
+    <div className="mt-16 flex flex-1 flex-col items-center">
       <div className="text-lg font-bold">회원가입 및 로그인</div>
-      <div className="flex flex-col w-11/12 justify-center items-center">
+      <Margin />
+      <div className="flex flex-col
+      w-7/12
+      sm:w-6/12
+      md:w-7/12
+      lg:w-5/12
+      xl:w-4/12
+      2xl:w-4/12">
         <SignInButton PlatformName="github" />
         <SignInButton PlatformName="discord" />
         <SignInButton PlatformName="google" />

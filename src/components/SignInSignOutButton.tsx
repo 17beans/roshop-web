@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Stack from '@mui/material/Stack';
-import { signOut, useSession } from "next-auth/react";
+import { signIn, signOut, useSession } from "next-auth/react";
 
 
 
@@ -20,33 +20,32 @@ const ComponentName = () => {
 export default function SignInSignOut() {
   const { data: session, status } = useSession();
 
+  return (
+    <Link
+      href={status === "authenticated" && "/" || "/SignIn"}
+      onClick={() => status === "authenticated" && signOut() || (() => { })}
+      className="bg-login-blue rounded-xl text-white h-3/4 w-16 center flex justify-center justify-self-center items-center">
+      {status === "authenticated" && "로그아웃" || "로그인"}
+    </Link>
+  )
+
   if (status === "authenticated") {
     return (
-      <div className="flex">
-        <Link
-          href={'/'}
-          onClick={() => signOut()}
-          className={`bg-login-blue rounded-xl pt-1.5 pb-1.5 pl-3.5 pr-3.5 text-white`}>
-          로그아웃
-        </Link>
-        {/* <div className="bg-login-blue rounded-xl pt-2 pb-1.5 pl-3.5 pr-3.5 text-white">
-                로그인하기
-                </div> */}
-      </div>
+      <Link
+        href={'/'}
+        onClick={() => status === "authenticated" && signOut() || signIn()}
+        className={`bg-login-blue rounded-xl text-white h-3/4 w-16 center flex justify-center justify-self-center items-center`}>
+        {status === "authenticated" && "로그아웃" || "로그인"}
+      </Link>
     )
   }
   else {
     return (
-      <div className="flex">
-        <Link
-          href={'/SignIn'}
-          className="bg-login-blue rounded-xl pt-1.5 pb-1.5 pl-3.5 pr-3.5 text-white">
-          로그인
-        </Link>
-        {/* <div className="bg-login-blue rounded-xl pt-2 pb-1.5 pl-3.5 pr-3.5 text-white">
-                로그인하기
-                </div> */}
-      </div>
+      <Link
+        href={'/SignIn'}
+        className="bg-login-blue rounded-xl text-white h-3/4 w-16 center flex justify-center justify-self-center items-center">
+        로그인
+      </Link>
     )
   }
 }

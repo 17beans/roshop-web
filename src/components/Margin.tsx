@@ -6,7 +6,7 @@ import Stack from '@mui/material/Stack';
 
 export const Margin = () => {
   return (
-    <div className="p-2 bg-white">
+    <div className="p-2">
 
     </div>
   )
@@ -14,7 +14,7 @@ export const Margin = () => {
 
 export const MarginLarge = () => {
   return (
-    <div className="p-10 bg-white">
+    <div className="p-10">
 
     </div>
   )
